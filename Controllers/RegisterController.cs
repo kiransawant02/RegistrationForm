@@ -36,6 +36,7 @@ namespace RegistrationForm.Controllers
             cmd.ExecuteNonQuery();
             ViewData["Message"] = "Record Inserted !!";
             con.Close();
+            ModelState.Clear();
             return View();            
         }
     }
